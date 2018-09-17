@@ -5,6 +5,11 @@
 			fillLastLine: false,
 			random: false
 		}, o);
+		opt.percent = false;
+		if (String(opt.basis).substr(-1) === '%') {
+			opt.percent = true;
+			opt.basis = parseInt(opt.basis);
+		}
 		if (typeof imagesLoaded !== 'function') {
 			console.log('Function imagesLoaded() does not exist. (use https://cerjan.github.io/resources/js/imagesloaded.pkgd.min.js)');
 			return;
@@ -15,7 +20,7 @@
 					div = $(image.img).closest('.grid_item');
 					div.css({
 						flexGrow: 2 * image.img.naturalWidth / image.img.naturalHeight,
-						flexBasis: opt.basis * image.img.naturalWidth / image.img.naturalHeight
+						flexBasis: opt.basis * image.img.naturalWidth / image.img.naturalHeight + (opt.percent ? '%' : 0)
 					});
 					if (opt.random) div.css({
 						order: Math.floor(1000 * Math.random())
