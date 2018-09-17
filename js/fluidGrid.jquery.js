@@ -23,7 +23,7 @@
 						paddingTop: (100 * image.img.naturalHeight / image.img.naturalWidth) + '%'
 					}).appendTo(div);
 		});
-		if (!opt.fillLastLine) $('<div />').css({flexGrow: 20, random: 1000}).appendTo(this);
+		if (!opt.fillLastLine) $('<div />').css({flexGrow: 20, order: 1000}).appendTo(this);
 		return this;
 	};
 }(jQuery));
