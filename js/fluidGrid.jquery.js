@@ -5,7 +5,7 @@
 			fillLastLine: false
 		}, o);
 		if (typeof imagesLoaded !== 'function') {
-			console.log('Function imagesLoaded() does not exist. (imagesloaded.pkgd.min.js)');
+			console.log('Function imagesLoaded() does not exist. (use https://cerjan.github.io/resources/js/imagesloaded.pkgd.min.js)');
 			return;
 		}
 		this.imagesLoaded()
