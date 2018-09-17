@@ -2,7 +2,8 @@
 	$.fn.fluidGrid = function(o) {
 		opt = $.extend({
 			basis: 240,
-			fillLastLine: false
+			fillLastLine: false,
+			random: false
 		}, o);
 		if (typeof imagesLoaded !== 'function') {
 			console.log('Function imagesLoaded() does not exist. (use https://cerjan.github.io/resources/js/imagesloaded.pkgd.min.js)');
@@ -14,6 +15,9 @@
 					div.css({
 						flexGrow: 2 * image.img.naturalWidth / image.img.naturalHeight,
 						flexBasis: opt.basis * image.img.naturalWidth / image.img.naturalHeight
+					});
+					if (opt.random) div.css({
+						order: Math.floor(1000 * Math.random())
 					});
 					$('<div class="spacer" />').css({
 						paddingTop: (100 * image.img.naturalHeight / image.img.naturalWidth) + '%'
