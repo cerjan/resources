@@ -4,7 +4,10 @@
 			basis: 240,
 			fillLastLine: false
 		}, o);
-		console.log(typeof imagesLoaded);
+		if (typeof imagesLoaded !== 'function') {
+			console.log('Function imagesLoaded() does not exist. (imagesloaded.pkgd.min.js)');
+			return;
+		}
 		this.imagesLoaded()
 				.progress(function(imstance, image) {
 					div = $(image.img).parent();
