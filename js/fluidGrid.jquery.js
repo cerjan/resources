@@ -4,7 +4,7 @@
 			basis: 240,
 			fillLastLine: false
 		}, o);
-		console.log(imagesLoaded);
+		console.log(typeof imagesLoaded);
 		this.imagesLoaded()
 				.progress(function(imstance, image) {
 					div = $(image.img).parent();
