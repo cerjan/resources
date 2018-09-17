@@ -9,9 +9,10 @@
 			console.log('Function imagesLoaded() does not exist. (use https://cerjan.github.io/resources/js/imagesloaded.pkgd.min.js)');
 			return;
 		}
+		this.find('> div').addClass('grid_item');
 		this.imagesLoaded()
 				.progress(function(imstance, image) {
-					div = $(image.img).parent();
+					div = $(image.img).closest('.grid_item');
 					div.css({
 						flexGrow: 2 * image.img.naturalWidth / image.img.naturalHeight,
 						flexBasis: opt.basis * image.img.naturalWidth / image.img.naturalHeight
