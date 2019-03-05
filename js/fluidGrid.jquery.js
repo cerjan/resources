@@ -16,7 +16,7 @@
 		}
 		this.find('> div').addClass('grid_item');
 		this.imagesLoaded()
-				.progress(function(imstance, image) {
+				.progress(function(instance, image) {
 					div = $(image.img).closest('.grid_item');
 					div.css({
 						flexGrow: 2 * image.img.naturalWidth / image.img.naturalHeight,
