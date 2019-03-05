@@ -1,6 +1,6 @@
 ## CSS
 
-```html
+```css
 .fluid_grid {
 	display: flex;
 	justify-content: center;
