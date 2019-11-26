@@ -12,7 +12,7 @@
 	link.style.fontFamily = typeof div.dataset.textReset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var text = document.createElement('div');
-	text.innerHTML = 'CREATED BY';
+	text.innerHTML = 'Created by';
 	text.style.marginRight = '.8ex';
 	
 	var icon = document.createElement('div');
