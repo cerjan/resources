@@ -32,4 +32,7 @@
     $('.fluid_grid').fluidGrid(options);
   });
 </script>
+
+<script src="https://cerjan.github.io/resources/js/sign.js" async></script>
+<span id="author-sign" data-dark />
 ```
