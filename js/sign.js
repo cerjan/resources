@@ -9,7 +9,7 @@
 	link.style.textDecoration = 'none';
 	link.style.display = 'inline-flex';
 	link.style.alignItems = 'center';
-	link.style.fontFamily = typeof div.dataset.text-reset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
+	link.style.fontFamily = typeof div.dataset.textReset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var text = document.createElement('div');
 	text.innerHTML = 'CREATED BY';
