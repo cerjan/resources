@@ -5,11 +5,11 @@
 	var link = document.createElement('a');
 	link.href = 'https://www.creativefriends.cz/';
 	link.target = '_blank';
-	link.style.color = typeof div.dataset.dark !== 'undefined' ? 'white' : 'inherit';
+	link.style.color = typeof div.dataset.color !== 'undefined' ? div.dataset.color : 'inherit';
 	link.style.textDecoration = 'none';
 	link.style.display = 'inline-flex';
 	link.style.alignItems = 'center';
-	link.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
+	link.style.fontFamily = typeof div.dataset.text-reset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var text = document.createElement('div');
 	text.innerHTML = 'CREATED BY';
