@@ -33,6 +33,5 @@
   });
 </script>
 
-<script src="https://cerjan.github.io/resources/js/sign.js" async></script>
-<span id="author-sign" data-dark />
+<script src="https://cerjan.github.io/resources/js/sign.js" async></script><span id="author-sign" data-dark/>
 ```
