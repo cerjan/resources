@@ -13,7 +13,7 @@
 	
 	var text = document.createElement('div');
 	text.innerHTML = 'Created by';
-	text.style.marginRight = '.8ex';
+	text.style.marginRight = '.6ex';
 	
 	var icon = document.createElement('div');
 	icon.style.display = 'flex';
