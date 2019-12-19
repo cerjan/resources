@@ -12,7 +12,7 @@
 	link.style.fontFamily = typeof div.dataset.textReset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var text = document.createElement('div');
-	text.innerHTML = 'Created by' + (typeof div.dataset.textLong !== 'undefined' ? ' CREATIVE FRIENDS' : '');
+	text.innerHTML = 'Created by' + (typeof div.dataset.textLong !== 'undefined' ? ' Creative Friends' : '');
 	text.style.marginRight = '.6ex';
 	
 	var icon = document.createElement('div');
