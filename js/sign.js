@@ -1,6 +1,8 @@
 (function(window) {
 	var div = document.getElementById('author-sign');
-	div.style.display = 'inline';
+	div.style.display = 'inline-flex';
+	div.style.alignItems = 'center';
+	div.style.fontFamily = typeof div.dataset.textReset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var link = document.createElement('a');
 	link.href = 'https://www.creativefriends.cz/';
@@ -9,7 +11,6 @@
 	link.style.textDecoration = 'none';
 	link.style.display = 'inline-flex';
 	link.style.alignItems = 'center';
-	link.style.fontFamily = typeof div.dataset.textReset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var text = document.createElement('div');
 	text.innerHTML = 'Created by' + (typeof div.dataset.textLong !== 'undefined' ? ' Creative Friends' : '');
@@ -23,4 +24,14 @@
 	link.appendChild(text);
 	if (div.dataset.icon !== 'false') link.appendChild(icon);
 	div.appendChild(link);
+	
+	var supp = document.createElement('a');
+	supp.href = 'https://creativefriends.freshdesk.com/support/tickets/new';
+	supp.target = '_blank';
+	supp.innerHtml = 'Support';
+	supp.style.color = typeof div.dataset.color !== 'undefined' ? div.dataset.color : 'inherit';
+	supp.style.textDecoration = 'none';
+	supp.style.marginLeft = '10px';
+	if (div.dataset.support === 'true') div.appendChild(supp);
+	
 })(window);
