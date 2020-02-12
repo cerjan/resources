@@ -28,7 +28,7 @@
 	var supp = document.createElement('a');
 	supp.href = 'https://creativefriends.freshdesk.com/support/tickets/new';
 	supp.target = '_blank';
-	supp.innerHtml = 'Support';
+	supp.innerHTML = 'Support';
 	supp.style.color = typeof div.dataset.color !== 'undefined' ? div.dataset.color : 'inherit';
 	supp.style.textDecoration = 'none';
 	supp.style.marginLeft = '10px';
