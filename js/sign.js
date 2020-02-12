@@ -31,7 +31,13 @@
 	supp.innerHTML = 'Support';
 	supp.style.color = typeof div.dataset.color !== 'undefined' ? div.dataset.color : 'inherit';
 	supp.style.textDecoration = 'none';
-	supp.style.marginLeft = '10px';
-	if (div.dataset.support === 'true') div.appendChild(supp);
+	
+	if (div.dataset.support === 'true') {
+		var sep = document.createElement('span');
+		sep.style.margin = '0 10px';
+		sep.innerHTML = '&bull;';
+		div.appendChild(sep);
+		div.appendChild(supp);
+	}
 	
 })(window);
