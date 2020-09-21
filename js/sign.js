@@ -13,7 +13,7 @@
 	link.style.alignItems = 'center';
 	
 	var text = document.createElement('div');
-	text.innerHTML = 'Created by' + (typeof div.dataset.textLong !== 'undefined' ? ' Creative Friends' : '');
+	text.innerHTML = 'Created by' + (typeof div.dataset.textLong !== 'undefined' ? ' CREATIVE FRIENDS' : '');
 	text.style.marginRight = '.6ex';
 	
 	var icon = document.createElement('div');
