@@ -5,7 +5,7 @@
 	div.style.fontFamily = typeof div.dataset.textReset !== 'undefined' ? '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' : '';
 	
 	var link = document.createElement('a');
-	link.href = 'https://www.creativefriends.cz/online/' + ((navigator.language || navigator.userLanguage).substring(0,2) !== 'cs' ? 'en/' : 'cs/');
+	link.href = 'https://www.creativefriends.cz/' + ((navigator.language || navigator.userLanguage).substring(0,2) !== 'cs' ? 'en/' : 'cs/');
 	link.target = '_blank';
 	link.style.color = typeof div.dataset.color !== 'undefined' ? div.dataset.color : 'inherit';
 	link.style.textDecoration = 'none';
